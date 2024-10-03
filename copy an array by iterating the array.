@@ -1,0 +1,18 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("original Array" );
+        int[] originalarr=new int[5];
+        for(int i=0;i<originalarr.length;i++){
+            originalarr[i]=sc.nextInt();
+        }
+        int[] copiedarr= new int[originalarr.length];
+        for(int i=0;i<originalarr.length;i++){
+            copiedarr[i]=originalarr[i];
+        }
+        System.out.println("copied array" + Arrays.toString(copiedarr));
+    }
+}
+
+       
